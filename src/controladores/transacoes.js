@@ -1,0 +1,3 @@
+//funcao entrada
+
+//funcao saida
