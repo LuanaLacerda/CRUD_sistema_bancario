@@ -4,6 +4,10 @@ const rotas = express();
 const login = require('./controladores/login');
 const verificaLogin = require('./filtros/verificarLogin')
 const transações = require('./controladores/transacoes')
+const swaggerUi = require('swagger-ui-express');
+
+//Documentação Api
+rotas.use("/docs", swaggerUi.serve, swaggerUi.setup(require('../swagger.json')))
 
 //Cadastro conta
 rotas.post('/contas', contas.cadastrarContas);

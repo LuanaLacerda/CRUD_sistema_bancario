@@ -1,10 +1,8 @@
-CREATE database banco
-
-drop table if exists usuario
+drop table if exists usuarios
 
 CREATE table usuarios (
   id serial primary key,
-  name text NOT NULL,
+  nome text NOT NULL,
   cpf varchar(11) NOT NULL UNIQUE,
   data_nascimento date NOT NULL,
   telefone varchar(15) NOT NULL UNIQUE,
@@ -24,5 +22,3 @@ create table transacoes (
   	valor float not null,
   	foreign key (id_usuario) references usuarios (id)
 )
-
-
