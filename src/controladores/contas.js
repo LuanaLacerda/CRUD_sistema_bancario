@@ -1,12 +1,6 @@
 const knex = require('../conexao');
 const bcrypt = require('bcrypt');
 
-const listarDadosUsuarioLogado = async (req, res) => {
-
-    return res.status(200).json(req.usuario)
-
-}
-
 const cadastrarContas = async (req, res) => {
     const { nome, email, cpf, data_nascimento, telefone, senha } = req.body
 
@@ -36,12 +30,16 @@ const cadastrarContas = async (req, res) => {
             return res.status(400).json('Usuário não foi cadastrado.')
         }
 
-        return res.status(200).json('Usuário cadastrado com sucesso.')
+        return res.status(201).json('Usuário cadastrado com sucesso.')
 
     } catch (error) {
         return res.status(400).json(error.message);
     }
 
+}
+
+const listarDadosUsuarioLogado = async (req, res) => {
+    return res.status(200).json(req.usuario)
 }
 
 const atualizarUsuario = async (req, res) => {
@@ -101,7 +99,6 @@ const atualizarUsuario = async (req, res) => {
 
 
 }
-
 
 
 
