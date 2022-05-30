@@ -1,1 +1,1 @@
-module.exports = 'senhaBanco';
+module.exports = process.env.SENHA_HASH;
