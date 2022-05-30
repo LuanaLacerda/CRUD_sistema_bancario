@@ -5,7 +5,7 @@
 
 Projeto que faz uma simulação de um Sistema Bancário
 
-## Linguagem, framework e/ou tecnologias usadas# Simulação de um Sistema Bancário
+## Linguagem, framework e/ou tecnologias usadas
 
 
 ## Introdução
