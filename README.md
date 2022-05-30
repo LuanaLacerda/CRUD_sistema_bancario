@@ -7,13 +7,6 @@ Projeto que faz uma simulação de um Sistema Bancário
 
 ## Linguagem, framework e/ou tecnologias usadas
 
-
-## Introdução
-
-Projeto que faz uma simulação de um Sistema Bancário
-
-## Linguagem, framework e/ou tecnologias usadas
-
 - NodeJs
 - Javascript
 - PostegreSQL
